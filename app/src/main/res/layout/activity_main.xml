@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvCoordenadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitud, Longitud"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/tvLugar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciudad, Estado, País"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btnUpdateLocation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCoordenadas" />
+
+    <Button
+        android:id="@+id/btnUpdateLocation"
+        android:text="Update Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLugar"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ingresa codigo postal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnUpdateLocation"
+        />
+    <Button
+        android:id="@+id/btn2"
+        android:text="cp send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/et1"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintBottom_toTopOf="@id/btnUpdateLocation"
+
+        />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cpdigo postal"
+        app:layout_constraintBottom_toTopOf="@id/et1"
+/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
